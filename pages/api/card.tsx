@@ -31,14 +31,23 @@ export default async function handler(req: NextRequest) {
           backgroundColor: "#f8cf7b",
           height: "100%",
           width: "100%",
-          fontSize: 100,
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
+          textAlign: "center",
           fontFamily: '"SixHandsBlack"',
         }}
       >
-        {title}
+        <p
+          style={{
+            transform: "rotate(-6deg)",
+            maxWidth: "65%",
+            fontSize: 65,
+            lineHeight: 1,
+          }}
+        >
+          {title}
+        </p>
       </div>
     ),
     {
